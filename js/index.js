@@ -85,3 +85,14 @@ contact.children[3].textContent = siteContent["contact"]["email"]
 // updating footer section
 const footer = document.querySelector('footer')
 footer.children[0].textContent = siteContent["footer"]["copyright"]
+
+// changing color of navigation to be green
+navItems.forEach(item => item.style.color = 'green')
+
+// add two new items to the navigation system (not green because they were added after navItems was defined)
+const blog = document.createElement('a')
+const resources = document.createElement('a')
+blog.textContent = "Blog"
+resources.textContent = "Resources"
+document.querySelector('nav').appendChild(blog)
+document.querySelector('nav').appendChild(resources)
