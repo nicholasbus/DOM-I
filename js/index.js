@@ -94,5 +94,7 @@ const blog = document.createElement('a')
 const resources = document.createElement('a')
 blog.textContent = "Blog"
 resources.textContent = "Resources"
+blog.href = "#"
+resources.href = "#"
 document.querySelector('nav').appendChild(blog)
 document.querySelector('nav').appendChild(resources)
